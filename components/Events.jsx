@@ -21,10 +21,29 @@ const Events = () => {
       schedule: "Sept 15, 11 AM - 2 PM",
       location: "MQH 225",
     },
+    // {
+    //   title: "CS Club Fair 2",
+    //   description: "Come to learn more about us at the Club Fair!",
+    //   schedule: "Sept 15, 11 AM - 2 PM",
+    //   location: "MQH 225",
+    // },
+    // {
+    //   title: "CS Club Fair 2",
+    //   description: "Come to learn more about us at the Club Fair!",
+    //   schedule: "Sept 15, 11 AM - 2 PM",
+    //   location: "MQH 225",
+    // },
+    // {
+    //   title: "CS Club Fair 2",
+    //   description: "Come to learn more about us at the Club Fair!",
+    //   schedule: "Sept 15, 11 AM - 2 PM",
+    //   location: "MQH 225",
+    // },
   ]
   return (
-    <div className="flex flex-col gap-4">
-       <div className="flex gap-6">
+    <div className="flex flex-col gap-4 md:mt-8">
+      <h1 className="text-3xl sm:text-xl font-bold">Upcoming Events</h1>
+       <div className="flex gap-6 flex-wrap items-center justify-center">
         {events.map((event, index) => (
           <EventCard key={index} {...event} />
         ))}
